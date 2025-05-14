@@ -1,7 +1,7 @@
 #  Theory of Computation Practical Exam 
 
 ## Name: Abdulrahman Nashat Elsayed Abu Saba Elesawy
-## Section: < 4 >
+## Section: 4
 
 ### Tasks Implemented:
 1. Write a Python function that converts a given NFA (with e-transitions) to an equivalent DFA using the subset construction algorithm.
