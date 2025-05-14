@@ -1,14 +1,12 @@
 #  Theory of Computation Practical Exam 
 
 ## Name: Abdulrahman Nashat Elsayed Abu Saba Elesawy
-## Section: <Section : 4 >
+## Section: < 4 >
 
 ### Tasks Implemented:
-1. NFA (with ε-transitions) to DFA converter
-2. Turing Machine simulator for unary addition
-3. CFG ambiguity checker (detect if a string has multiple parse trees)
-
----
+1. Write a Python function that converts a given NFA (with e-transitions) to an equivalent DFA using the subset construction algorithm.
+2. Write a program that takes a CFG and checks if a given string has more than one parse tree, indicating that the grammar is ambiguous for that string.
+3. Simulate a Turing Machine that computes the sum of two unary numbers separated by a +. **Example** input: 111+11 Output: 11111.
 
 ### How does each project work :
 
