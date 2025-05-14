@@ -37,10 +37,6 @@
 - DFA states are represented as frozensets of NFA states.
 - DFA transitions are stored in a dictionary keyed by (DFA state, input symbol).
 
-##### Summary:
-
-The program systematically explores reachable subsets of NFA states, building the DFA states and transitions on-the-fly, ensuring only reachable states are included. This approach efficiently converts an NFA with ε-transitions into a minimal equivalent DFA.
-
 **__________________________________________________________**
 #### 2. Turing Machine Simulator
 [python turing_machine/machine.py
@@ -62,10 +58,6 @@ The program systematically explores reachable subsets of NFA states, building th
 
 4. **Halting**  
    The machine halts when it reaches the `halt` state, and the tape content represents the sum of the two unary numbers.
-
-##### Summary:
-
-This implementation manually simulates the Turing Machine’s tape, head movement, state transitions, and symbol rewriting without using external libraries. It illustrates the fundamental principles of Turing Machines and how they compute by reading and writing symbols on an infinite tape.
 
 **__________________________________________________________**
 #### 3. CFG Ambiguity Checker
@@ -89,8 +81,3 @@ This implementation manually simulates the Turing Machine’s tape, head movemen
 
 - This approach is practical for small strings and simple grammars due to exponential complexity.  
 - It does not handle infinite recursion or left-recursive grammars efficiently.
-
-##### Summary:
-
-The program manually explores all derivations of the input string in the CFG to detect ambiguity, illustrating the concept of ambiguous grammars and parse trees without relying on external parsing libraries.
-
