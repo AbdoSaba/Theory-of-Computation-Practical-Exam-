@@ -13,4 +13,5 @@
 ### How to run each task:
 
 #### 1. NFA to DFA
-nfa_to_dfa+converter.py
+[nfa_to_dfa+converter.py
+](url)
