@@ -65,3 +65,29 @@ The program systematically explores reachable subsets of NFA states, building th
 
 This implementation manually simulates the Turing Machine’s tape, head movement, state transitions, and symbol rewriting without using external libraries. It illustrates the fundamental principles of Turing Machines and how they compute by reading and writing symbols on an infinite tape.
 
+#### 3. CFG Ambiguity Checker
+[cfg_ambiguity+ambiguity_checker.py
+](url)
+##### How it works:
+
+1. **Grammar Representation**  
+   The CFG is represented as a dictionary where each non-terminal maps to a list of productions. Each production is a list of symbols (terminals or non-terminals). The start symbol is specified separately.
+
+2. **Parsing with Memoization**  
+   The program recursively attempts to parse the input string from the start symbol, generating all possible parse trees.  
+   - For terminals, it checks if the string matches exactly.  
+   - For non-terminals, it tries all productions and all possible splits of the string to match the sequence of symbols in the production.  
+   - Results are memoized to avoid redundant computations.
+
+3. **Detecting Ambiguity**  
+   After parsing, if more than one distinct parse tree is found for the input string, the string is considered ambiguous.
+
+##### Limitations:
+
+- This approach is practical for small strings and simple grammars due to exponential complexity.  
+- It does not handle infinite recursion or left-recursive grammars efficiently.
+
+##### Summary:
+
+The program manually explores all derivations of the input string in the CFG to detect ambiguity, illustrating the concept of ambiguous grammars and parse trees without relying on external parsing libraries.
+
