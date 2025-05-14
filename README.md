@@ -9,7 +9,7 @@
 3. Simulate a Turing Machine that computes the sum of two unary numbers separated by a +. **Example** input: 111+11 Output: 11111.
 
 ### How does each project work :
-
+**__________________________________________________________**
 #### 1. NFA to DFA
 [nfa_to_dfa+converter.py
 ](url)
@@ -39,7 +39,7 @@
 ##### Summary:
 
 The program systematically explores reachable subsets of NFA states, building the DFA states and transitions on-the-fly, ensuring only reachable states are included. This approach efficiently converts an NFA with ε-transitions into a minimal equivalent DFA.
-
+**__________________________________________________________**
 #### 2. Turing Machine Simulator
 [python turing_machine/machine.py
 ](url)
@@ -64,7 +64,7 @@ The program systematically explores reachable subsets of NFA states, building th
 ##### Summary:
 
 This implementation manually simulates the Turing Machine’s tape, head movement, state transitions, and symbol rewriting without using external libraries. It illustrates the fundamental principles of Turing Machines and how they compute by reading and writing symbols on an infinite tape.
-
+**__________________________________________________________**
 #### 3. CFG Ambiguity Checker
 [cfg_ambiguity+ambiguity_checker.py
 ](url)
